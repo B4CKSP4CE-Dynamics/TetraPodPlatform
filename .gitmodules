@@ -1,0 +1,3 @@
+[submodule "third_party/Easy3D"]
+	path = third_party/Easy3D
+	url = https://github.com/LiangliangNan/Easy3D
