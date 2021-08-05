@@ -25,7 +25,7 @@ void setup() {
     l1.s2.attach(11); // straight = 163, 90deg = 111
 
     l2.s0.attach(3); // side = 74, backward = 170
-    l2.s1.attach(4); // straight = 23, 90deg = 120
+    l2.s1.attach(4); // up=150, straight = 50
     l2.s2.attach(5); // straight = 23, 90deg = 120
 
     l3.s0.attach(2); // side = 114, forward = 12
