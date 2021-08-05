@@ -18,10 +18,13 @@ void setup() {
     l1.s1.attach(10);
     l1.s2.attach(11);
 
-    l1.s2.write(180);
+    l1.s2.write(63); // straight = 163, 90deg = 111
+
     l0.s0.attach(8);
     l0.s1.attach(7);
     l0.s2.attach(6);
+
+    l0.s2.write(111); // straight = 17, 90deg = 111
 
     pinMode(led, OUTPUT);
 }
