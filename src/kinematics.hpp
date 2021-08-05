@@ -24,6 +24,12 @@ struct Leg
 
 struct Angles
 {
+    Angles(real_t j0, real_t j1, real_t j2)
+    : j0{j0}
+    , j1{j1}
+    , j2{j2}
+    {}
+
     real_t j0 = 0.0, j1 = 0.0, j2 = 0.0;
 };
 
@@ -70,7 +76,7 @@ Angles leg_ik(Leg leg, Vec3 target)
 
     if (!check_triangle(d, leg.femur_length, leg.tibia_length))
     {
-        return {0, 0, 0};
+        return Angles{0, 0, 0};
     }
 
     // knee doesn't bend backwards (for now)
