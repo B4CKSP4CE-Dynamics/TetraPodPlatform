@@ -11,7 +11,7 @@ struct LegServos
     Servo s0, s1, s2;
 };
 
-LegServos l0, l1;
+LegServos l0, l1, l2, l3;
 
 void setup() {
     l1.s0.attach(9);
@@ -25,6 +25,14 @@ void setup() {
     l0.s2.attach(6);
 
     l0.s2.write(111); // straight = 17, 90deg = 111
+
+    l2.s0.attach(3);
+    l2.s1.attach(4);
+    l2.s2.attach(5);
+
+    l3.s0.attach(2);
+    l3.s1.attach(A5);
+    l3.s2.attach(A6);
 
     pinMode(led, OUTPUT);
 }
